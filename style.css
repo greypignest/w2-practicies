@@ -1,57 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
-  }
-  
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  a img {
-    border: none
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
-  
-  textarea {
-    resize: none
-  }
-  
-  button, input, textarea, select {
+margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+box-sizing: border-box;
+
+background: transparent;
+
+font-family: inherit;
+
+text-decoration: none;
+}
+
+ol, ul, li {
+list-style:none;
+display:block;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0
+}
+
+a img {
+border: none
+}
+
+button, a {
+cursor: pointer;
+color: inherit
+}
+
+textarea {
+resize: none
+}
+
+button, input, textarea, select {
     appearance: none !important;
     -webkit-appearance: none !important;
     border-radius: 0
-  }
+}
 
-  section {
-      min-height: 100vh;
-  }
+section {
+    min-height: 100vh;
+}
 
-  #menu-btn {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 40px;
-      height: 40px;
-      margin: 20px;
+#menu-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    z-index: 10;
 
-      background-color: black;
-  }
+    background-color: black;
+}
+/* #menu-btn.clicked{
+    background-color: red;
+}
+ */
+#nav{
+    position: fixed;
+    top: 0;
+    right: -200px;   
+    width: 200px;
+    height: 100vh;
+    z-index: 9;
+
+    background-color: blue;
+}
+
+#bodyId.clicked nav {
+    right: 0;
+}
+
+#bodyId.clicked button {
+    background-color: red;
+}
